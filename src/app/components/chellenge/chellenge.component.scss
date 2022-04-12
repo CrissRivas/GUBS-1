@@ -3,8 +3,24 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    overflow: hidden;
+    position: relative;
     font-family: 'Open Sans', sans-serif;
+}
+
+.bag {
+    position: absolute;
+    height: 600px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.bag-img {
+    animation-name: move-bag;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .img-bgrnd {
@@ -33,9 +49,6 @@
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    p {
-        margin: 0px
-    }
 }
 
 .text-2 {
@@ -49,9 +62,6 @@
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    p {
-        margin: 0px
-    }
 }
 
 .anti-text-1 {
@@ -66,9 +76,6 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: reverse;
-    p {
-        margin: 0px
-    }
 }
 
 .anti-text-2 {
@@ -83,9 +90,6 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: reverse;
-    p {
-        margin: 0px
-    }
 }
 
 .rel-box {
@@ -100,7 +104,7 @@
     justify-content: center;
     background-color: darkturquoise;
     align-items: center;
-    p {
+    .p-text {
         width: 250px;
         line-height: 30px;
         font-size: 20px;
@@ -158,5 +162,32 @@
     }
     100% {
         left: -1220px;
+    }
+}
+
+@keyframes move-bag {
+    0% {
+        transform: rotate(20deg);
+        height: 400px;
+    }
+    20% {
+        transform: rotate(-20deg);
+        height: 450px;
+    }
+    40% {
+        transform: rotate(20deg);
+        height: 500px;
+    }
+    60% {
+        transform: rotate(-10deg);
+        height: 450px;
+    }
+    80% {
+        transform: rotate(0deg);
+        height: 300px;
+    }
+    100% {
+        transform: rotate(20deg);
+        height: 400px;
     }
 }

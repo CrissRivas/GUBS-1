@@ -16,13 +16,14 @@ import { CultureComponent } from './pages/culture/culture.component';
 import { BrandsComponent } from './pages/brands/brands.component';
 import { RoadmapsComponent } from './pages/roadmaps/roadmaps.component';
 import { ConspiraciesComponent } from './pages/conspiracies/conspiracies.component';
-
+import { SwiperModule } from 'swiper/angular';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 
 import { NotesComponent } from './components/notes/notes.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     BrandsComponent,
     RoadmapsComponent,
     ConspiraciesComponent,
-    NotesComponent
+    NotesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     MatIconModule,
     NoopAnimationsModule,
-
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

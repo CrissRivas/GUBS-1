@@ -1,57 +1,13 @@
-// .notes {
-//     height: 700px;
-//     width: 100%;
-//     overflow: hidden;
-//     display: grid;
-//     background-color: #1071e5;
-//     grid-template-rows: 1fr 50px;
-//     .reference {
-//         height: 150px;
-//         width: 100%;
-//         position: relative;
-//         .manifesto {
-//             width: 300%;
-//             position: absolute;
-//             font-size: 200px;
-//             font-weight: bolder;
-//             color: white;
-//             animation-name: MT1;
-//             animation-duration: 20s;
-//             animation-iteration-count: infinite;
-//             animation-timing-function: linear;
-//         }
-//     }
-// }
-// .note {
-//     position: relative;
-//     .paper {
-//         position: absolute;
-//         height: 500px;
-//         top: 10px;
-//     }
-//     .tape {
-//         position: absolute;
-//         width: 150px;
-//         left: 80px;
-//     }
-//     .clip {
-//         position: absolute;
-//         height: 100px;
-//         z-index: 1;
-//         transform: rotate(-20deg);
-//         left: 70px;
-//         top: 60px;
-//     }
-// }
-// @keyframes MT1 {
-//     0% {
-//         left: 0px;
-//     }
-//     100% {
-//         left: -1650px;
-//     }
-// }
-// @import "~swiper/css/bundle";
+.notes {
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    background-color: #1071e5;
+    // background-color: black;
+    grid-template-rows: 1fr 100px;
+}
+
 // .con-cuchara {
 //     height: 100%;
 //     width: 100%;
@@ -61,7 +17,41 @@
 //     align-items: center;
 //     justify-items: center;
 // }
-// .img--detalle {
-//     height: 525px;
-//     width: 350px;
-// }
+.img--detalle {
+    height: 525px;
+}
+
+.ful {
+    width: 1000px;
+    height: 550px;
+}
+
+//////TEXTO
+.reference {
+    height: 150px;
+    width: 100%;
+    position: relative;
+}
+
+.manifesto {
+    width: 300%;
+    position: absolute;
+    font-size: 200px;
+    top: -90px;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    animation-name: MT1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes MT1 {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -1738px;
+    }
+}
