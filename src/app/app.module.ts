@@ -18,7 +18,7 @@ import { RoadmapsComponent } from './pages/roadmaps/roadmaps.component';
 import { ConspiraciesComponent } from './pages/conspiracies/conspiracies.component';
 import { SwiperModule } from 'swiper/angular';
 
-import {MatButtonModule} from '@angular/material/button';
+import {MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
 import {MatIconModule} from '@angular/material/icon';
 
 import { NotesComponent } from './components/notes/notes.component';
